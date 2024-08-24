@@ -1,8 +1,8 @@
 import TodoItem from './TodoItem';
 
-const TodoList = ({ todos, onDelete }) => {
+const TodoList = ({ todos, onDelete, onEditConfirm }) => {
 return (
-    <div className="w-full max-w-md h-[500px] overflow-y-auto">
+    <div className="space-y-4">
     {todos.map((todo, index) => (
         <TodoItem
         key={index}
@@ -10,6 +10,7 @@ return (
         isSuggested={todo.isSuggested}
         loading={todo.loading}
         onDelete={() => onDelete(index)}
+        onEditConfirm={(newText) => onEditConfirm(index, newText)}
         />
     ))}
     </div>

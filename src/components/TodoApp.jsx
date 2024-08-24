@@ -27,14 +27,17 @@ const deleteTodo = (index) => {
     setTodos(todos.filter((_, i) => i !== index));
 };
 
+const editTodo = (index, newText) => {
+    setTodos(todos.map((todo, i) => i === index ? { ...todo, text: newText } : todo));
+};
+
 return (
-    <div className="w-full max-w-md p-4 bg-white rounded-md shadow-md">
-    <h1 className="text-3xl font-bold mb-4 text-center">AI Powered Procrastination</h1>
+    <div className="px-5 py-2 font-medium border border-b-4 border-r-4 border-black bg-white rounded-lg shadow-[8px_8px_0px_rgba(0,0,0,1)]">
+    <h1 className="text-4xl font-bold tracking-wider border-b-4 pb-2">Todo App</h1>
     <TodoInput addTodo={addTodo} />
-    <TodoList todos={todos} onDelete={deleteTodo} />
+    <TodoList todos={todos} onDelete={deleteTodo} onEditConfirm={(index, newText) => editTodo(index, newText)} />
     </div>
 );
 };
 
 export default TodoApp;
-

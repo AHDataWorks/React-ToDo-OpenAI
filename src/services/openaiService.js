@@ -11,7 +11,8 @@ export const getSuggestedTodo = async (userTodo) => {
             { role: "user", content: `The user added the todo item: "${userTodo}".
                 Suggest a michievous short one setence procrastination task related to the user's todo item.
                 If there is a spelling error, or if the todo item is nonsense reply "Learn to spell.
-                Don't try to talk the user out of their todo item, suggest something to make it longer or procrastinate starting it."` }
+                Don't try to talk the user out of their todo item, suggest something to make it longer or procrastinate starting it.
+                Do not phrase as question."` }
             ],
             max_tokens: 50,
         },
