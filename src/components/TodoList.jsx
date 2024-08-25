@@ -12,7 +12,7 @@ const TodoList = ({ todos, onDelete, onEditConfirm }) => {
             onDelete={() => onDelete(index)}
             onEditConfirm={(newText) => onEditConfirm(index, newText)}
             icon={todo.icon}
-            estimatedTime={todo.estimatedTime} // Pass estimated time
+            estimatedTime={todo.estimatedTime} 
         />
         ))}
     </div>

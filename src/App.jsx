@@ -7,7 +7,7 @@ const App = () => {
     <div className="flex flex-col min-h-screen lg:bg-rose-500 justify-center items-center ">
 
         {/* Navbar */}
-        <nav className="px-5 py-2 font-medium w-full lg:-mr-16 max-w-5xl mb-5 mt-3 border border-b-4 border-r-4 border-black bg-sky-300 rounded-lg shadow-[8px_8px_0px_rgba(0,0,0,1)]">
+        <nav className="px-5 py-2 font-medium w-full lg:-ml-16 max-w-5xl mb-5 mt-3 border border-b-4 border-r-4 border-black bg-sky-300 rounded-lg shadow-[8px_8px_0px_rgba(0,0,0,1)]">
           <div className="container mx-auto flex justify-between items-center">
             <div className="text-2xl font-bold">My App</div>
             <div className="space-x-4">
@@ -21,9 +21,8 @@ const App = () => {
           </div>
         </nav>
 
-            <div className="flex-col w-full max-w-5xl rounded-lg border border-b-4 border-r-4 mt-5 border-black bg-rose-100 rounded-lg">
 
-
+        <div className="flex-col w-full max-w-5xl rounded-lg border border-b-4 border-r-4 mt-5 border-black bg-rose-100 rounded-lg">
 
 {/* Todo Section */}
         <Element name="todo" className="">
@@ -34,7 +33,9 @@ const App = () => {
           </section>
         </Element>
 
+        </div>
 
+        
         {/* Splash Page */}
         <section className="min-h-screen flex items-center justify-center">
           <div className="text-center">
@@ -65,7 +66,7 @@ const App = () => {
         </Element>
 
         
-      </div>
+      
     </div>
   );
 };

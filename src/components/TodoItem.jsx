@@ -46,7 +46,7 @@ const formatTime = (time) => {
 
 return (
     <div className={`mb-4`}>
-    <div className={`p-4 border-4 border-black flex items-center justify-between ${isSuggested ? 'ml-8 border-lime-400 bg-black text-lime-400 font-courier' : ''}`}>
+    <div className={`p-4 border-4 border-black flex items-center justify-between ${isSuggested ? ' border-lime-400 bg-black text-lime-400 font-courier' : ''}`}>
         <div className="flex items-center">
         <i className={`mr-2 fa ${icon}`}></i>
         <input
